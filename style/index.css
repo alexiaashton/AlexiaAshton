@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=DM+Mono:wght@300;400&family=Pacifico&family=Sacramento&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 *,
 *::before,
@@ -7,8 +7,8 @@
 }
 
 :root {
-  --ff-primary: 'Sacramento';
-  --ff-secondary: 'DM mono';
+  --ff-primary: 'Pt Serif';
+  --ff-secondary: 'DM Mono' ;
 
   --fw-reg:300;
   --fw-bold:900;
@@ -114,10 +114,12 @@ p {
 
 .intro {
   position: relative;
+
 }
 
 .intro_img {
   box-shadow: var(--bs);
+  border-radius: 280px;
 }
 
 .section__subtitle--intro {
@@ -148,6 +150,50 @@ p {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em)
+  }
+
+}
+
+/*--------Highlights/Tidbits Section------------*/
+
+.highlights {
+  background-color: var(--clr-drk);
+  /*background-image: ;*/
+  /*background-size: cover;
+  background-blend-mode: multiply;*/
+  color:var(--clr-light);
+  text-align: center;
+}
+
+.section__title--highlights {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.section__title--highlights::after {
+  content: '';
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-accent);
+  opacity: .25;
+}
+
+.tidbit {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .all_tidbits{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+
+  }
+  .tidbit + .tidbit {
+    margin-left: 2em;
   }
 
 }
