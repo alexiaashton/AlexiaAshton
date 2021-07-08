@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=DM+Mono:wght@300;400&family=Pacifico&family=Sacramento&family=Shrikhand&display=swap');
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --fw-reg:300;
+  --fw-bold:900;
+
+  --clr-light:#fff;
+  --clr-drk:#303030;
+  --clr-accent:#16e0bd;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.23rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
+
+body{
+
+}
+
+@media (min-width: 800px) {
+  :root{
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+/*General Style */
 body {
-  background-color: aqua;
+  background: var(--clr-light);
+  color: var(--clr-drk);
+  margin: 0;
 }
