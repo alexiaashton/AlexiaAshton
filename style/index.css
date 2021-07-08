@@ -209,7 +209,7 @@ p {
 }
 
 .all_tidbits {
-  padding-bottom: 5em;
+  margin-bottom: 5em;
 }
 
 .tidbit {
@@ -221,7 +221,8 @@ p {
   .all_tidbits{
     display: flex;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
   }
   .tidbit + .tidbit {
