@@ -141,7 +141,10 @@ p {
 /*----Intro Section */
 
 .intro {
+  max-width: 1000px;
+  margin: 0 auto;
   position: relative;
+
 
 }
 
@@ -229,4 +232,33 @@ p {
     margin-left: 2em;
   }
 
+}
+
+/*----About ME -----*/
+
+.about_me {
+ max-width: 1000px;
+ margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .about_me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+  }
+  .section__subtitle--about {
+
+  }
+  .section__subtitle--about {
+    grid-column: 1;
+
+  }
+  .about_me--image {
+    grid-row: 1 / -1;
+    grid-column: 2;
+  }
 }
