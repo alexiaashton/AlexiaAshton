@@ -241,6 +241,10 @@ p {
  margin: 0 auto;
 }
 
+.about_me--image {
+  box-shadow: var(--bs);
+}
+
 @media (min-width: 600px) {
   .about_me {
     display: grid;
@@ -249,16 +253,21 @@ p {
       "title img"
       "subtitle img"
       "text img";
+    grid-column-gap: 2em;
+  }
+  .section__title--about {
+    grid-area: title;
   }
   .section__subtitle--about {
-
-  }
-  .section__subtitle--about {
-    grid-column: 1;
-
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -2em;
+    width: calcl(100% + 4em);
+    padding-left: 2em;
+    padding-right: calc(200px + 2em);
   }
   .about_me--image {
-    grid-row: 1 / -1;
-    grid-column: 2;
+    grid-area: img;
   }
 }
