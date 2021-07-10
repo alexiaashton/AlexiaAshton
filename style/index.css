@@ -245,6 +245,10 @@ p {
   box-shadow: var(--bs);
 }
 
+.section__subtitle--about {
+  width: 1000px;
+}
+
 @media (min-width: 600px) {
   .about_me {
     display: grid;
