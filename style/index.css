@@ -141,7 +141,10 @@ p {
 /*----Intro Section */
 
 .intro {
+  max-width: 1000px;
+  margin: 0 auto;
   position: relative;
+
 
 }
 
@@ -229,4 +232,44 @@ p {
     margin-left: 2em;
   }
 
+}
+
+/*----About ME -----*/
+
+.about_me {
+ max-width: 1000px;
+ margin: 0 auto;
+}
+
+.about_me--image {
+  box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+  .about_me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+  .section__title--about {
+    grid-area: title;
+  }
+  .section__subtitle--about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calcl(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+  .about_me--image {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
 }
