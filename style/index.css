@@ -262,12 +262,14 @@ p {
     grid-column: 1 / -1;
     grid-row: 2;
     position: relative;
-    left: -2em;
-    width: calcl(100% + 4em);
-    padding-left: 2em;
-    padding-right: calc(200px + 2em);
+    left: -1em;
+    width: calcl(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
   }
   .about_me--image {
     grid-area: img;
+    position: relative;
+    z-index: 2;
   }
 }
