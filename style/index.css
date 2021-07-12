@@ -180,6 +180,23 @@ header {
   color:var(--clr-accent);
 }
 
+.hamburger {
+  background: var(--clr-drk);
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  display: block;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: var(--clr-drk);
+}
 
 /*----Intro Section */
 
