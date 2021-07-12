@@ -426,6 +426,7 @@ header {
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
+
 }
 
 .footer a {
@@ -464,3 +465,7 @@ header {
 .social__list-link {
   padding: .75em;
 }
+
+/* Portfolio Pages */
+
+
