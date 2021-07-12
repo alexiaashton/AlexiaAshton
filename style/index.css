@@ -471,7 +471,17 @@ header {
   line-height: 1.5em;
 }
 
-.portfolio_img {
+.EW_portfolio_page_img {
   max-width: 200px;
   margin: 0 auto;
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+.EW_portfolio_page_img:hover {
+  transform: scale(1.2);
+  opacity: 0.75;
+}
+
+.portfolio-item-individual h3 {
+  margin: 0 auto;
+  padding: 30px;
 }
