@@ -6,24 +6,24 @@
     <meta charset="utf 8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <link rel="stylesheet" href="/style/index.css" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a65cfa172c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="logo">
         <h2 class="logo_font">Alexia<h2>
       </div>
-        <button class="nav-toggle" aria-label="navigation">
-          <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav_item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav_item"><a href="#info_highlights" class="nav__link">Tidbits</a></li>
-            <li class="nav_item"><a href="#about" class="nav__link">About Me</a></li>
-            <li class="nav_item"><a href="#work" class="nav__link">My Work</a></li>
-          </ul>
-        </nav>
+      <button class="nav-toggle" aria-label="navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav_item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav_item"><a href="#info_highlights" class="nav__link">Tidbits</a></li>
+          <li class="nav_item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav_item"><a href="#work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
     </header>
     <!--Introduction-->
     <section class="intro" id="home">
@@ -70,24 +70,43 @@
 
     <!--My Work-->
     <section class="my_work" id="work">
-      <h2 class="section__title section__title--work"></h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title section__title--work">My Projects</h2>
+      <p class="section__subtitle section_subtitle--work">Things I've worked on so far</p>
 
 
       <div class="portfolio">
         <!--Portfolio Item 1-->
         <a href="#" class="portfolio__item">
-          <img src="#" alt="" class="portfolio_img">
+          <img src="img/DogBNB.jpg" alt="DogBNB Landing Page" class="portfolio_img">
+        </a>
+        <!--Potfolio ITem 2-->
+        <a href="portfolio_item.html" class="portfolio__item">
+          <img src="img/emergencyWiki.jpg" alt="Emergency-Wiki Landing Page" class="portfolio_img">
+        </a>
+        <!--Portfoilio Item 3-->
+        <a href="#" class="portfolio__item">
+          <img src="img/frontendmentor.jpg" alt="Front End Mentor Projects" class="portfolio_img">
         </a>
       </div>
     </section>
-  </body>
-  <footer>
+
+  <!--footer-->
+
+  <footer class="footer">
     <a href="mailto:ashtonalexia@gmail.com" class="footer-link">ashtonalexia@gmail.com</a>
     <ul class="social_list">
-      <li class="social__list-item"><a href="https://github.com/alexiaashton" class="social__list-link">A</a></li>
-      <li class="social__list-item"><a href="https://www.linkedin.com/in/alexia-ashton" class="social__list-link">B</a></li>
-      <li class="social__list-item"><a href="https://www.instagram.com/lexash/?hl=en" class="social__list-link">C</a></li>
+      <li class="social__list-item">
+        <a href="https://github.com/alexiaashton" class="social__list-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="social__list-item">
+        <a href="https://www.linkedin.com/in/alexia-ashton" class="social__list-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
     </ul>
-  </footer>
+   </footer>
+   <script src="js/index.js"></script>
+ </body>
 <html>
