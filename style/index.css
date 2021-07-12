@@ -134,10 +134,19 @@ p {
 }
 
 /*---header--*/
-.nav {
-  display: none;
+.logo {
+  max-width: 150px;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  padding:1em;
+}
+
+.nav {
+  position: fixed;
+}
 /*----Intro Section */
 
 .intro {
