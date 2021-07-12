@@ -484,6 +484,7 @@ header {
 .portfolio-item-individual h3 {
   margin: 0 auto;
   padding: 30px;
+  text-align: center;
 }
 
 .tech_lang_used {
