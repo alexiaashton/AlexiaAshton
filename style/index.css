@@ -290,19 +290,22 @@ p {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
 }
 
 .portfolio_img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
   transition:
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
-
 }
 
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+
 }
 .portfolio_img:hover {
  transform: scale(1.2);
