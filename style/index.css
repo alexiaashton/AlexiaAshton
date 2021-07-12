@@ -293,10 +293,19 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.portfolio__item, img {
-  width: 300px;
-  height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.portfolio_img {
+  transition:
+    transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+  object-fit: cover;
+}
+
+.portfolio__item {
+  background: var(--clr-accent);
+  overflow: hidden;
+
+}
+.portfolio_img:hover {
+ transform: scale(1.2);
+ opacity: .75;
 }
