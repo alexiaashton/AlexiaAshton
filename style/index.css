@@ -276,3 +276,27 @@ p {
 
 /*-------------Portfolio------*/
 
+.my_work {
+  background-color: var(--clr-drk);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section_subtitle--work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1em;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio__item, img {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
