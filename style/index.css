@@ -487,8 +487,17 @@ header {
 }
 
 .tech_lang_used {
-  margin: 0 auto;
+  text-align: center;
 }
 
 .tech_list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.tech_item {
+  padding: 2em;
 }
