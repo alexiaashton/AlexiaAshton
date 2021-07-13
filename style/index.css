@@ -325,6 +325,11 @@ header {
   margin: 0 auto;
 }
 
+.skills_list {
+  list-style: none;
+  align-content: center;
+}
+
 @media (min-width: 800px) {
   .all_tidbits {
     display: flex;
