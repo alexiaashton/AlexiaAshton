@@ -304,6 +304,7 @@ header {
 .section__title--highlights {
   color: var(--clr-accent);
   position: relative;
+  display: grid;
 }
 
 .section__title--highlights::after {
@@ -323,11 +324,11 @@ header {
 .tidbit {
   max-width: 500px;
   margin: 0 auto;
+  line-height: 1.5em;
 }
 
-.skills_list {
-  list-style: none;
-  align-content: center;
+.tidbit p {
+  opacity: 0.7;
 }
 
 @media (min-width: 800px) {
