@@ -47,6 +47,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1;
+  min-width: 600px;
 }
 
 section {
@@ -505,6 +506,7 @@ header {
   padding: 0 2em 2em;
   max-width: 1000px;
   margin: 0 auto;
+  min-width: 600px;
 }
 
 .portfolio-item-individual p {
@@ -544,4 +546,15 @@ header {
 
 .tech_item {
   padding: 2em;
+}
+
+@media (min-width: 375px) {
+  .tech_item {
+    padding: 0.5em;
+  }
+
+  .tech_list {
+    margin: 1em auto;
+    padding: 0;
+  }
 }
