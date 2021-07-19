@@ -259,11 +259,13 @@ header {
   border-radius: 280px;
   right: 20px;
   bottom: 20px;
+  width: 50%;
 }
 
 .section__subtitle--intro {
   display: inline-block;
 }
+
 @media (min-width: 600px) {
   .intro {
     display: grid;
