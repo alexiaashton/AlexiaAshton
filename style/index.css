@@ -376,7 +376,7 @@ header {
 
 @media (min-width: 375px) {
   .highlights {
-    margin: 0 auto;
+    min-width: 600px;
   }
 }
 
