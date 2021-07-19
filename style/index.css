@@ -144,9 +144,6 @@ p {
   max-width: 100px;
 }
 
-header {
-}
-
 .navigation {
   display: flex;
   justify-content: space-between;
