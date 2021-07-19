@@ -387,6 +387,7 @@ header {
 .about_me {
   max-width: 1000px;
   margin: 0 auto;
+  line-height: 2em;
 }
 
 @media (min-width: 375px) {
