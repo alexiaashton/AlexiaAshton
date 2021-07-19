@@ -145,10 +145,13 @@ p {
 }
 
 header {
+}
+
+.navigation {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  width: 100vw;
+  width: 100%;
 }
 
 .nav {
@@ -247,6 +250,12 @@ header {
 
 .hamburger::after {
   bottom: 6px;
+}
+
+@media (min-width: 375px) {
+  .navigation {
+    min-width: 500px;
+  }
 }
 
 /*----Intro Section */
@@ -387,6 +396,7 @@ header {
 .about_me {
   max-width: 1000px;
   margin: 0 auto;
+  line-height: 2em;
 }
 
 @media (min-width: 375px) {
