@@ -147,6 +147,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  width: 100vw;
 }
 
 .nav {
@@ -393,12 +394,7 @@ header {
 
 @media (min-width: 375px) {
   .about_me {
-    grid-template-columns: 1fr 200px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-    grid-column-gap: 2em;
+    min-width: 500px;
   }
   .section__title--about {
     grid-area: title;
@@ -411,9 +407,6 @@ header {
     width: 100%;
     padding-left: 1em;
     padding-right: calc(200px + 4em);
-  }
-  .about_me--image {
-    display: none;
   }
   p {
     text-align: center;
@@ -455,6 +448,12 @@ header {
   opacity: 0.75;
 }
 
+@media (min-width: 375px) {
+  .my_work {
+    min-width: 600px;
+  }
+}
+
 /*---footer----*/
 
 .footer {
@@ -462,6 +461,7 @@ header {
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
+  min-width: 600px;
 }
 
 .footer a {
