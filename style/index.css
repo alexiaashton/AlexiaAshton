@@ -246,8 +246,8 @@ header {
 .hamburger::after {
   bottom: 6px;
 }
-/*----Intro Section */
 
+/*----Intro Section */
 .intro {
   max-width: 1000px;
   margin: 0 auto;
@@ -257,12 +257,16 @@ header {
 .intro_img {
   box-shadow: var(--bs);
   border-radius: 280px;
+  right: 10px;
+  bottom: 10px;
+  width: 50%;
 }
 
 .section__subtitle--intro {
   display: inline-block;
 }
-@media (min-width: 600px) {
+
+@media (min-width: 768px) {
   .intro {
     display: grid;
     width: min-content;
@@ -286,6 +290,33 @@ header {
     text-align: right;
     position: relative;
     left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
+}
+
+@media (min-width: 375px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+  .intro_img {
+    grid-area: img;
+    min-width: 250px;
+    z-index: 2;
+  }
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1em;
     width: calc(100% + 1.5em);
   }
 }
@@ -331,7 +362,7 @@ header {
   opacity: 0.7;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .all_tidbits {
     display: flex;
     max-width: 1000px;
@@ -340,6 +371,12 @@ header {
   }
   .tidbit + .tidbit {
     margin-left: 2em;
+  }
+}
+
+@media (min-width: 375px) {
+  .highlights {
+    margin: 0 auto;
   }
 }
 
@@ -354,9 +391,8 @@ header {
   box-shadow: var(--bs);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 375px) {
   .about_me {
-    display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-areas:
       "title img"
@@ -372,14 +408,15 @@ header {
     grid-row: 2;
     position: relative;
     left: -1em;
-    width: calc(100% + 2em);
+    width: 100%;
     padding-left: 1em;
     padding-right: calc(200px + 4em);
   }
   .about_me--image {
-    grid-area: img;
-    position: relative;
-    z-index: 2;
+    display: none;
+  }
+  p {
+    text-align: center;
   }
 }
 
