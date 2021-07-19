@@ -389,10 +389,6 @@ header {
   margin: 0 auto;
 }
 
-.about_me--image {
-  box-shadow: var(--bs);
-}
-
 @media (min-width: 375px) {
   .about_me {
     min-width: 500px;
@@ -403,8 +399,6 @@ header {
   .section__subtitle--about {
     grid-column: 1 / -1;
     grid-row: 2;
-    position: relative;
-    left: -1em;
     width: 100%;
     padding-left: 1em;
     padding-right: calc(200px + 4em);
