@@ -47,6 +47,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1;
+  min-width: 600px;
 }
 
 section {
@@ -147,6 +148,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  width: 100vw;
 }
 
 .nav {
@@ -376,7 +378,7 @@ header {
 
 @media (min-width: 375px) {
   .highlights {
-    margin: 0 auto;
+    min-width: 600px;
   }
 }
 
@@ -393,12 +395,7 @@ header {
 
 @media (min-width: 375px) {
   .about_me {
-    grid-template-columns: 1fr 200px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-    grid-column-gap: 2em;
+    min-width: 500px;
   }
   .section__title--about {
     grid-area: title;
@@ -411,9 +408,6 @@ header {
     width: 100%;
     padding-left: 1em;
     padding-right: calc(200px + 4em);
-  }
-  .about_me--image {
-    display: none;
   }
   p {
     text-align: center;
@@ -455,6 +449,12 @@ header {
   opacity: 0.75;
 }
 
+@media (min-width: 375px) {
+  .my_work {
+    min-width: 600px;
+  }
+}
+
 /*---footer----*/
 
 .footer {
@@ -462,6 +462,7 @@ header {
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
+  min-width: 600px;
 }
 
 .footer a {
@@ -505,6 +506,7 @@ header {
   padding: 0 2em 2em;
   max-width: 1000px;
   margin: 0 auto;
+  min-width: 600px;
 }
 
 .portfolio-item-individual p {
@@ -544,4 +546,15 @@ header {
 
 .tech_item {
   padding: 2em;
+}
+
+@media (min-width: 375px) {
+  .tech_item {
+    padding: 0.5em;
+  }
+
+  .tech_list {
+    margin: 1em auto;
+    padding: 0;
+  }
 }
